@@ -58,3 +58,5 @@ django-environ>=0.11.2     # Pour les variables d’environnement
 # Tests
 pytest>=8.2.0
 pytest-django>=4.8.0
+drf_yasg>=1.21.10
+
