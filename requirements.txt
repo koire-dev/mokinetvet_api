@@ -1,62 +1,44 @@
 asgiref>=3.7.2
 bcrypt>=3.1.7
-blinker==1.4
-chardet==3.0.4
-Click==7.0
-colorama==0.4.3
-cryptography>=2.8
+blinker>=1.4
+colorama>=0.4.6
+cryptography>=42.0.0
 djangorestframework>=3.15.2
 djangorestframework-simplejwt>=5.3.1
-future==0.18.2
-idna==2.8
+future>=0.18.3
+idna>=3.6
 pillow>=10.4.0
-protobuf==3.6.1
-PyJWT>=1.7.1
-pytz>=2021.1
-six==1.14.0
-sqlparse==0.5.1
-typing_extensions==4.12.2
-urllib3>=1.25.8
+protobuf>=4.25.3
+PyJWT>=2.8.0
+pytz>=2024.1
+six>=1.16.0
+sqlparse>=0.5.1
+typing_extensions>=4.12.2
+urllib3>=2.2.1
 Django>=5.0.7
-gunicorn>=20.1.0
+gunicorn>=21.2.0
 mysqlclient>=2.2.0
 django-cors-headers>=3.14.0
 django-extensions>=3.2.1
-certifi>=2021.10.8
+certifi>=2024.2.2
 cloudinary>=1.41.0
-requests>=2.22.0
+requests>=2.31.0
 drf-yasg>=1.21.10
-django-filter>=24.2              # Pour les filtres sur les vues DRF
-drf-nested-routers>=0.93.4       # Pour les routes imbriquées (utile pour consultations/userMessages/animaux)
-django-cleanup>=8.0.0            # Pour supprimer les fichiers uploadés en cas de suppression d’objet
-python-decouple>=3.8             # Pour gérer les variables d’environnement
-django-storages>=1.14.2          # Si vous stockez les médias sur S3 ou Cloudinary
-django-cron>=1.0.0               # Pour les rappels de traitements ou tâches programmées
-celery>=5.4.0                    # Si vous utilisez un système de tâche pour les notifications/rappels
-redis>=5.0.1                     # Si Celery ou cache est utilisé
-# Pour support multilingue (fiches maladies, etc.)
+django-filter>=24.2
+drf-nested-routers>=0.93.4
+django-cleanup>=8.0.0
+python-decouple>=3.8
+django-storages>=1.14.2
+django-cron>=0.6.0
+celery>=5.4.0
+redis>=5.0.1
 django-modeltranslation>=0.18.11
-# Pour image/video processing
-opencv-python>=4.8.1.78  # Si IA traitement vidéo/image local
+opencv-python>=4.8.1.78
 moviepy>=1.0.3
-# Websockets pour chat en temps réel
-channels>=4.0.0            # WebSocket (chat en temps réel)
-channels_redis>=4.1.0      # Pour backend Redis des websockets
-
-# IA/diagnostic futur (optionnel mais recommandé)
-scikit-learn>=1.4.2
-pandas>=2.2.2
-numpy>=1.26.4
-
-# Analyse / tableau de bord (optionnel pour statistiques)
+channels>=4.0.0
+channels_redis>=4.1.0
+django-environ>=0.11.2
 matplotlib>=3.8.4
 seaborn>=0.13.2
-
-# Sécurité
-django-environ>=0.11.2     # Pour les variables d’environnement
-
-# Tests
 pytest>=8.2.0
 pytest-django>=4.8.0
-drf_yasg>=1.21.10
-
