@@ -20,7 +20,7 @@ schema_view = get_schema_view(
     public=True,
     permission_classes=(permissions.AllowAny,),
 )
-
+print(">>> URLs chargés pour la prod <<<")
 
 urlpatterns = [
     path('api/', include('users.urls')),
