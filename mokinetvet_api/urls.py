@@ -7,6 +7,7 @@ from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 
 from mokinetvet_api import settings
+from users.views import redirect_to_docs
 
 schema_view = get_schema_view(
     openapi.Info(
@@ -23,6 +24,7 @@ schema_view = get_schema_view(
 
 
 urlpatterns = [
+    path('', redirect_to_docs),
     path('api/', include('users.urls')),
     path('api/', include('animals.urls')),
     path('api/', include('consultations.urls')),

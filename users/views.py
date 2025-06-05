@@ -73,3 +73,9 @@ class LogoutView(APIView):
 
 class MyTokenObtainPairView(TokenObtainPairView):
     serializer_class = MyTokenObtainPairSerializer
+
+
+from django.shortcuts import redirect
+
+def redirect_to_docs(request):
+    return redirect('/swagger/')
